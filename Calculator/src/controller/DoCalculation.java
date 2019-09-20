@@ -44,7 +44,8 @@ public class DoCalculation extends HttpServlet {
 		Calculator calc = new Calculator(Integer.parseInt(field1),Integer.parseInt(field2), operator);
 		calc.doCalculation();
 		request.setAttribute("results", calc);
-		getServletContext().getRequestDispatcher("/result.jsp").forward(request, response);
+		if(operator.contains("power")) getServletContext().getRequestDispatcher("/result2.jsp").forward(request, response);
+		else getServletContext().getRequestDispatcher("/result.jsp").forward(request, response);
 	}
 
 }

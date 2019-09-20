@@ -16,7 +16,8 @@
 <label><input type="radio" name="operator" value="divide" size="10">/</label><br>
 <label><input type="text" name="field2" size="10">Field 2</label><br>
 Please choose an operation to perform on the two numbers:<br>
-<input type="submit" value="Do Calculation" />
+<input type="submit" value="Do Calculation" /><br>
+<a href="index2.jsp">Calculate power instead</a>
 </form>
 </body>
 </html>

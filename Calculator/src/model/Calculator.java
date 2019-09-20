@@ -51,6 +51,7 @@ public class Calculator {
 		else if(operator.contains("subtract")) setResult(numberOne - numberTwo);
 		else if(operator.contains("multiply")) setResult(numberOne * numberTwo);
 		else if(operator.contains("divide")) setResult(numberOne / numberTwo);
+		else if(operator.contains("power")) setResult((int) Math.floor(Math.pow(numberOne, numberTwo)));
 		else setResult(-1);
 	}
 
